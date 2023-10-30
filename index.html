@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature Conversion</title>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div>
+    <div class="wrapper w-auto">
+        <div class="title">
+            <h1>Welcome to TempShift</h1>
+            <p>Instant Temperature Conversion for Every Need</p>
+        </div>
+        <div class="input-container">
+            <div class="container">
+                <label for="celsius">Celsius</label>
+                <input type="number" id="celsius" oninput="celConv()">
+            </div>
+            <div class="container">
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="number" id="fahrenheit" oninput="farConv()">
+            </div>
+            <div class="container">
+                <label for="kelvin">Kelvin</label>
+                <input type="number" id="kelvin" oninput="kelConv()">
+            </div>
+        </div>
+    </div>    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
